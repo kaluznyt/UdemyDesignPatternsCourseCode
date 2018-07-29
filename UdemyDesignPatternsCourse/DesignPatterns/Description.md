@@ -25,3 +25,40 @@ Motivation:
 
 
 
+## Factory Method & Abstract Factory
+
+*A component responsible solely for the wholesale (not piecewise) creation of objects.*
+
+Motivation:
+- object creation logic becomes too convoluted
+- constructor is not descriptive
+  - name mandated by name of containing type
+  - cannot overload with same sets of arguments with different names
+  - can turn into 'optional parameter hell'
+- object creation (non-piecewise, unlike Builder) can be outsourced to
+  - a separate function (factory method)
+  - that may exist in a separate class (factory)
+  - can create hierarchy of factories with abstract factory
+
+#### Summary
+
+- A factory method is a static method that creates objects
+- a factory can take care of object creation
+- a factory can be external or reside inside the object as an inner class
+- hierarchies of factories can be used to create related objects (abstract factory)
+
+
+## TEMPLATE
+
+description
+
+Motivation:
+- some objects are simple and can be created in a single constructor call
+
+
+*template*
+
+
+#### Summary
+
+- template

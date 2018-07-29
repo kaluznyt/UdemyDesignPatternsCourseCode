@@ -1,5 +1,5 @@
 ﻿using UdemyDesignPatternsCourse.DesignPatterns.Builder;
-
+using UdemyDesignPatternsCourse.DesignPatterns.Factories;
 using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
 using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
@@ -18,7 +18,8 @@ namespace UdemyDesignPatternsCourse
 
         private static void DesignPatterns()
         {
-            new Builder().Run();
+            //new Builder().Run();
+            new Factories().Run();
         }
 
         static void Solid()
