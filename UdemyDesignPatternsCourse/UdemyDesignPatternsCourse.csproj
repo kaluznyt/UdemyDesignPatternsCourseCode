@@ -73,6 +73,12 @@
     <Compile Include="SOLID\4.InterfaceSegregationPrinciple\MultiFunctionPrinter.cs" />
     <Compile Include="SOLID\4.InterfaceSegregationPrinciple\OldFashinedPrinter.cs" />
     <Compile Include="SOLID\4.InterfaceSegregationPrinciple\PhotoCopier.cs" />
+    <Compile Include="SOLID\5.DependencyInversionPrinciple\DependencyInversionPrinciple.cs" />
+    <Compile Include="SOLID\5.DependencyInversionPrinciple\IRelationshipBrowser.cs" />
+    <Compile Include="SOLID\5.DependencyInversionPrinciple\Person.cs" />
+    <Compile Include="SOLID\5.DependencyInversionPrinciple\Relationship.cs" />
+    <Compile Include="SOLID\5.DependencyInversionPrinciple\Relationships.cs" />
+    <Compile Include="SOLID\5.DependencyInversionPrinciple\Research.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

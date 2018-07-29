@@ -1,4 +1,7 @@
-﻿using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
+﻿using System.Runtime.InteropServices.WindowsRuntime;
+using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
+using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
+using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.OpenClosedPrinciple;
 using UdemyDesignPatternsCourse.SOLID.SingleResponsibilityPrinciple;
 
@@ -10,7 +13,9 @@ namespace UdemyDesignPatternsCourse
         {
             //new SingleResponsibilityPrinciple().Run();
             //new OpenClosedPrinciple().Run();
-            new LiskovSubstitutionPrinciple().Run();
+            //new LiskovSubstitutionPrinciple().Run();
+            //new InterfaceSegregationPrinciple().Run();
+            new DependencyInversionPrinciple().Run();
         }
     }
 }
