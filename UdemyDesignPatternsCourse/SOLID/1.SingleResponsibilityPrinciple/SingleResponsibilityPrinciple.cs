@@ -3,6 +3,12 @@ using System.IO;
 
 namespace UdemyDesignPatternsCourse.SOLID.SingleResponsibilityPrinciple
 {
+
+    /// <summary>
+    /// Single Responsibility Principle
+    /// - a class should only have one reason to change
+    /// - 'Separation of Concerns' - different classes handling different independent tasks/problems
+    /// </summary>
     public class SingleResponsibilityPrinciple : IDemo
     {
         public void Run()

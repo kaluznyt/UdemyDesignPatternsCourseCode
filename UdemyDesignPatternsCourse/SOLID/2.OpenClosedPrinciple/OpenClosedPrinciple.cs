@@ -2,6 +2,12 @@
 
 namespace UdemyDesignPatternsCourse.SOLID.OpenClosedPrinciple
 {
+    /// <summary>
+    /// Open-Closed Principle
+    /// - classes should be open for extension but closed for modification
+    /// - bad idea to modify source code of existing classes (if that can be avoided)
+    /// - build systems in an extensible way (using interfaces, dependency inversion)
+    /// </summary>
     public class OpenClosedPrinciple : IDemo
     {
         public void Run()
