@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple
 {
+    // Low Level Module, abstracted the store away to IRelationshipBrowser interface
     public class Relationships : IRelationshipBrowser
     {
         private readonly List<(Person, Relationship, Person)> _relations = new List<(Person, Relationship, Person)>();
