@@ -1,10 +1,13 @@
 ﻿# Design Patterns
 
-## Builder 
+## Creational
+
+
+### Builder 
 
 When construction gets a little bit too complex.
 
-Motivation:
+##### Motivation
 - some objects are simple and can be created in a single constructor call
 - other objects require a lot of ceremony to create
 - having an object with 10 constructor arguments is not productive
@@ -15,21 +18,18 @@ Motivation:
 *When a piecewise object construction is complicated, provide an API for doing it succintly.*
 
 
-#### Summary
+##### Summary
 
 - A builder is a separate component for building an object
 - Can either give builder a constructor or return via a static function from a component
 - To make builder fluent return this
 - Different facets of an object can be build with different builders working in tandem via a base class
 
-
-
-
-## Factory Method & Abstract Factory
+### Factory Method & Abstract Factory
 
 *A component responsible solely for the wholesale (not piecewise) creation of objects.*
 
-Motivation:
+##### Motivation
 - object creation logic becomes too convoluted
 - constructor is not descriptive
   - name mandated by name of containing type
@@ -40,7 +40,7 @@ Motivation:
   - that may exist in a separate class (factory)
   - can create hierarchy of factories with abstract factory
 
-#### Summary
+##### Summary
 
 - A factory method is a static method that creates objects
 - a factory can take care of object creation
@@ -48,17 +48,17 @@ Motivation:
 - hierarchies of factories can be used to create related objects (abstract factory)
 
 
-## TEMPLATE
+### TEMPLATE
 
 description
 
-Motivation:
+##### Motivation
 - some objects are simple and can be created in a single constructor call
 
 
 *template*
 
 
-#### Summary
+##### Summary
 
 - template
