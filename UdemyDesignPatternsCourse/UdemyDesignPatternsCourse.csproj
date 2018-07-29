@@ -45,6 +45,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IDemo.cs" />
+    <Compile Include="SOLID\LiskovSubstitutionPrinciple\LiskovSubstitutionPrinciple.cs" />
+    <Compile Include="SOLID\LiskovSubstitutionPrinciple\Rectangle.cs" />
+    <Compile Include="SOLID\LiskovSubstitutionPrinciple\Square.cs" />
     <Compile Include="SOLID\OpenClosedPrinciple\AndSpecification.cs" />
     <Compile Include="SOLID\OpenClosedPrinciple\BetterFilter.cs" />
     <Compile Include="SOLID\OpenClosedPrinciple\Color.cs" />
