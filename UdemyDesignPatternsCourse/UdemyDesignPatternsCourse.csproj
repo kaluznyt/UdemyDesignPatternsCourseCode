@@ -42,6 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPatterns\Builder\Builder.cs" />
+    <Compile Include="DesignPatterns\Builder\CodeBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\FacetedBuilder\Person.cs" />
+    <Compile Include="DesignPatterns\Builder\FacetedBuilder\PersonBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\FacetedBuilder\PersonJobBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\HtmlBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\HtmlElement.cs" />
+    <Compile Include="DesignPatterns\Builder\Person.cs" />
+    <Compile Include="DesignPatterns\Builder\PersonAddressBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\PersonBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\PersonInfoBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\PersonJobBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IDemo.cs" />
@@ -82,6 +94,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DesignPatterns\Description.md" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

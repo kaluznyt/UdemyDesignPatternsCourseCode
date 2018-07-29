@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices.WindowsRuntime;
+﻿using UdemyDesignPatternsCourse.DesignPatterns.Builder;
+
 using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
 using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
@@ -11,10 +12,21 @@ namespace UdemyDesignPatternsCourse
     {
         static void Main(string[] args)
         {
-            //new SingleResponsibilityPrinciple().Run();
-            //new OpenClosedPrinciple().Run();
-            //new LiskovSubstitutionPrinciple().Run();
-            //new InterfaceSegregationPrinciple().Run();
+            //Solid();
+            DesignPatterns();
+        }
+
+        private static void DesignPatterns()
+        {
+            new Builder().Run();
+        }
+
+        static void Solid()
+        {
+            new SingleResponsibilityPrinciple().Run();
+            new OpenClosedPrinciple().Run();
+            new LiskovSubstitutionPrinciple().Run();
+            new InterfaceSegregationPrinciple().Run();
             new DependencyInversionPrinciple().Run();
         }
     }
