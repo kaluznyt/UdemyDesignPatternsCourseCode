@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
+using UdemyDesignPatternsCourse.DesignPatterns.Factories;
+using UdemyDesignPatternsCourse.DesignPatterns.Factories.UdemyDesignPatternsCourse.DesignPatterns.Factories.Problem;
 
-namespace UdemyDesignPatternsCourse.DesignPatterns.Factories
+namespace UdemyDesignPatternsCourse.DesignPatterns.Creational.Factories
 {
     public class Factories : IDemo
     {
         public void Run()
         {
             var point = Point.Factory.NewPolarPoint(1.0, Math.PI / 2);
-            WriteLine(point);
+            Console.WriteLine(point);
 
             //var hotDrinkMachine = new HotDrinkMachineThatBreaksOpenClosedPrinciple();
             var hotDrinkMachine = new HotDrinkMachine();
@@ -20,7 +18,7 @@ namespace UdemyDesignPatternsCourse.DesignPatterns.Factories
         }
     }
 
-    namespace UdemyDesignPatternsCourse.DesignPatterns.Factories.Problem
+    namespace UdemyDesignPatternsCourse.DesignPatterns.Factories.Creational.Problem
     {
         public class Point
         {

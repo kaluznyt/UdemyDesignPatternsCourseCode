@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
+using UdemyDesignPatternsCourse.DesignPatterns.Builder;
 
-namespace UdemyDesignPatternsCourse.DesignPatterns.Builder
+namespace UdemyDesignPatternsCourse.DesignPatterns.Creational.Builder
 {
     public class Builder : IDemo
     {
@@ -25,14 +23,14 @@ namespace UdemyDesignPatternsCourse.DesignPatterns.Builder
                     .AddField("Name", "string")
                     .AddField("Age", "int");
 
-            WriteLine(cb);
+            Console.WriteLine(cb);
         }
 
         private static void FacetedBuilderDemo()
         {
-            var pb = new FacetedBuilder.PersonBuilder();
+            var pb = new DesignPatterns.Builder.FacetedBuilder.PersonBuilder();
 
-            FacetedBuilder.Person person = pb.Works
+            DesignPatterns.Builder.FacetedBuilder.Person person = pb.Works
                 .At("Fabrikam")
                 .AsA("Engineer")
                 .Earing(123000)
@@ -41,7 +39,7 @@ namespace UdemyDesignPatternsCourse.DesignPatterns.Builder
                 .In("New York")
                 .WithPostcode("XXXXXX");
 
-            WriteLine(person);
+            Console.WriteLine(person);
         }
 
         private static void FluentDerivedBuilderDemo()
@@ -52,7 +50,7 @@ namespace UdemyDesignPatternsCourse.DesignPatterns.Builder
                 .WorksAsA("software dev")
                 .Build();
 
-            WriteLine(me);
+            Console.WriteLine(me);
         }
 
         private static void HtmlBuilderDemo()
@@ -63,7 +61,7 @@ namespace UdemyDesignPatternsCourse.DesignPatterns.Builder
             sb.Append("<p>");
             sb.Append(hello);
             sb.Append("</p>");
-            WriteLine(sb);
+            Console.WriteLine(sb);
 
             var words = new[] { "hello", "world" };
             sb.Clear();
@@ -74,13 +72,13 @@ namespace UdemyDesignPatternsCourse.DesignPatterns.Builder
             }
 
             sb.Append("</ul>");
-            WriteLine(sb);
+            Console.WriteLine(sb);
 
 
             var builder = new HtmlBuilder("ul")
                 .AddChild("li", "hello")
                 .AddChild("li", "world");
-            WriteLine(builder);
+            Console.WriteLine(builder);
         }
     }
 

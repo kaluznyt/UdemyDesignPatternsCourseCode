@@ -47,6 +47,59 @@ When construction gets a little bit too complex.
 - a factory can be external or reside inside the object as an inner class
 - hierarchies of factories can be used to create related objects (abstract factory)
 
+### Prototype
+
+When it's easier to copy an existing object to fully initialize a new one.
+
+##### Motivation
+- complicated objects (ex. cars) aren't designed from scratch all the time
+  - it's an iterative process
+- an existing (partially or fully constructed) design is a Prototype
+- we make a copy (clone) the prototype and customize it
+  - requires 'deep copy' support
+- make cloning convenient
+
+
+*A partially or fully initialized object that you copy (clone) and make use of*
+
+
+##### Summary
+
+- To implement a prototype, partially construct an object and store it somewhere
+- Clone the prototype
+  - Implement deep copy yourself via copy constructors, interfaces etc.
+  - serialize, deserialize using existing serializer
+- Customize the resulting instance
+
+
+### Singleton
+
+A design pattern everyone loves to hate..but is it really that bad ?
+
+*"When discussing whith patterns to drop, we found that we still love them all. (Not really - I'm in favor of dropping Singleton. Its use is almost always a design smell.)"*  
+
+*Erich Gamma*
+
+##### Motivation
+- for some components it only make sense to have one instance in the system
+  - database repository
+  - object factory
+- where constructor call is expensive
+  - we do it only once
+  - we provide everyone with the same instance
+- want to prevent anyone creating additional copies
+- need to take care of lazy instantiation and thread safety
+
+*A component whith is instantiated only once*
+
+##### Summary
+
+- Making a safe singleton is easy: construct a static Lazy< T> and return it's Value
+- Thread safe implementation needs more work
+- Singletons are difficult to test
+- Instead of directly using a singleton, consider depending on a abstraction (e.g. interface)
+- consider defining singleton lifetime in DI container
+
 
 ### TEMPLATE
 
