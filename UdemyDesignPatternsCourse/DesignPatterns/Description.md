@@ -100,6 +100,44 @@ A design pattern everyone loves to hate..but is it really that bad ?
 - Instead of directly using a singleton, consider depending on a abstraction (e.g. interface)
 - consider defining singleton lifetime in DI container
 
+## Structural
+
+### Adapter
+
+Getting the interface you want from the interface you have.
+
+A construct whith adapts an existing interface X to conform to the required interface Y.
+
+
+##### Summary
+
+- Implementing an Adapter is easy
+- Determine the API you have and the API you need to provide
+- Create a component which aggregates the adapteee
+- Intermediate representations can pile up: use caching and other optimizations
+
+### Bridge
+
+Connecting components together through abstractions.
+
+##### Motivation
+- Bridge prevents a 'Cartesian product' complexity explosion
+  - Example:
+    - Base class ThreadScheduler
+      - Can be preemptive or cooperative
+      - Can run on Windows or Linux
+      - Ends up with a 2 x 2 scenario: WindowsPTS, UnixPTS, WindowsCTS, UnixCTS..
+- Bridge avoids entity explosion
+
+
+*A mechanism that decouples an interface (hierarchy) from an implementation (hierarchy)*
+
+##### Summary
+
+- Decouple abstraction from implementation
+- Both can exist as hierarchies
+- A stronger form of encapsulation
+
 
 ### TEMPLATE
 

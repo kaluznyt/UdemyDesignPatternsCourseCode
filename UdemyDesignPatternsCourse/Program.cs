@@ -2,6 +2,8 @@
 using UdemyDesignPatternsCourse.DesignPatterns.Creational.Factories;
 using UdemyDesignPatternsCourse.DesignPatterns.Creational.Prototype;
 using UdemyDesignPatternsCourse.DesignPatterns.Creational.Singleton;
+using UdemyDesignPatternsCourse.DesignPatterns.Structural.Adapter;
+using UdemyDesignPatternsCourse.DesignPatterns.Structural.Bridge;
 using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
 using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
@@ -20,7 +22,8 @@ namespace UdemyDesignPatternsCourse
 
         private static void DesignPatterns()
         {
-            Creational();
+            //Creational();
+            Structural();
         }
 
         private static void Creational()
@@ -29,6 +32,12 @@ namespace UdemyDesignPatternsCourse
             //new Factories().Run();
             //new Prototype().Run();
             new Singleton().Run();
+        }
+
+        private static void Structural()
+        {
+            //new Adapter().Run();
+            new Bridge().Run();
         }
 
         static void Solid()
