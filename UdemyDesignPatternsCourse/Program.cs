@@ -4,6 +4,7 @@ using UdemyDesignPatternsCourse.DesignPatterns.Creational.Prototype;
 using UdemyDesignPatternsCourse.DesignPatterns.Creational.Singleton;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Adapter;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Bridge;
+using UdemyDesignPatternsCourse.DesignPatterns.Structural.Composite;
 using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
 using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
@@ -37,7 +38,8 @@ namespace UdemyDesignPatternsCourse
         private static void Structural()
         {
             //new Adapter().Run();
-            new Bridge().Run();
+            //new Bridge().Run();
+            new Composite().Run();
         }
 
         static void Solid()

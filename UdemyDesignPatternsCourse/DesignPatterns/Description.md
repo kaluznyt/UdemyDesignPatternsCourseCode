@@ -139,6 +139,40 @@ Connecting components together through abstractions.
 - A stronger form of encapsulation
 
 
+
+### Composite
+
+Treating individual and aggregate objects uniformly.
+
+##### Motivation
+- Object use other objects fields/props/members through inheritance and composition
+- composition lets us make compound objects
+  - e.g.
+    - mathematical expressions composed of simple expressions
+    - a grouping of shapes that consist of several shapes
+- composite design pattern is used to treat both single (scalar) and composite objects uniformly
+  - foo and collection<foo> have common APIs
+
+
+*A mechanism for treating individual (scalar) objects and compositions of objects in a uniform manner.*
+
+
+##### Summary
+
+- Objects can use other objects via inheritance/composition
+- Some composed and singular objects need similiar/identical behaviors / APIs
+- Composite pattern lets us treat both types of objects uniformly
+- C# has special support for the enumeration concept (IEnumerable)
+- A single object can masquerade as a collection with yield return this;
+
+
+
+
+
+
+
+
+
 ### TEMPLATE
 
 description
