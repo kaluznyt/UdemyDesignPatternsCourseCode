@@ -39,6 +39,9 @@
     <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="dotMemory.Unit, Version=111.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBrains.dotMemoryUnit.3.0.20171219.105559\lib\net35\dotMemory.Unit.dll</HintPath>
+    </Reference>
     <Reference Include="MoreLinq, Version=3.0.0.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
       <HintPath>..\packages\morelinq.3.0.0\lib\net451\MoreLinq.dll</HintPath>
     </Reference>
@@ -124,6 +127,11 @@
     <Compile Include="DesignPatterns\Structural\Decorator\MyStringBuilder.cs" />
     <Compile Include="DesignPatterns\Structural\Decorator\Square.cs" />
     <Compile Include="DesignPatterns\Structural\Decorator\TransparentShape.cs" />
+    <Compile Include="DesignPatterns\Structural\Flyweight\BetterFormattedText.cs" />
+    <Compile Include="DesignPatterns\Structural\Flyweight\Flyweight.cs" />
+    <Compile Include="DesignPatterns\Structural\Flyweight\FormattedText.cs" />
+    <Compile Include="DesignPatterns\Structural\Flyweight\User.cs" />
+    <Compile Include="DesignPatterns\Structural\Flyweight\User2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IDemo.cs" />

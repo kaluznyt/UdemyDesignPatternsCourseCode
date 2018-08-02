@@ -6,11 +6,13 @@ using UdemyDesignPatternsCourse.DesignPatterns.Structural.Adapter;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Bridge;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Composite;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Decorator;
+using UdemyDesignPatternsCourse.DesignPatterns.Structural.Flyweight;
 using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
 using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.OpenClosedPrinciple;
 using UdemyDesignPatternsCourse.SOLID.SingleResponsibilityPrinciple;
+using Xunit.Sdk;
 
 namespace UdemyDesignPatternsCourse
 {
@@ -41,7 +43,8 @@ namespace UdemyDesignPatternsCourse
             //new Adapter().Run();
             //new Bridge().Run();
             //new Composite().Run();
-            new Decorator().Run();
+            //new Decorator().Run();
+            new Flyweight(new TestOutputHelper()).Run();
         }
 
         static void Solid()

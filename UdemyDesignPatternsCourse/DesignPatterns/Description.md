@@ -192,7 +192,45 @@ Adding behavior without altering the class itself.
   - very limited use, inability to inherit from type params
 
 
+### Façade
 
+Exposing several components through a simple interface.
+
+##### Motivation
+- Balancing complexity and presentation/usability
+- End user is not exposed to internals (may be a complex internal structure that's hidden)
+
+
+*Provides a simple, easy to understand/user interface over a large and sophisticated body of code.*
+
+
+##### Summary
+
+- Build a Facade to provide a simplified API over a set of classes
+- (optionally) May wish to expose internals through the facade
+- May allow users to escalate to user more complex APIs if they want/need to
+
+
+### Flyweight
+
+Space optimization!
+
+##### Motivation
+- Avoid redundancy when storing data
+- E.g. MMORPG
+  - plenty of users with identical first/last names
+  - no sense in storing same first/last name over and over again
+  - store a list of names and pointers to them
+- .NET performs string interning, so and identical string is stored only once
+- bold or italic text in the console
+  - dont' want each character to have a formatting character
+  - operate on ranges (line number, start/end positions)
+
+*A space optimization technique that lets us use less memory by storing externally the data associated with similiar objects.*
+
+##### Summary
+
+- template
 
 
 
