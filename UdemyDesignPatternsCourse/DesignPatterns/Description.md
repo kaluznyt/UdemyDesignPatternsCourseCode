@@ -151,7 +151,7 @@ Treating individual and aggregate objects uniformly.
     - mathematical expressions composed of simple expressions
     - a grouping of shapes that consist of several shapes
 - composite design pattern is used to treat both single (scalar) and composite objects uniformly
-  - foo and collection<foo> have common APIs
+  - foo and collection\<foo> have common APIs
 
 
 *A mechanism for treating individual (scalar) objects and compositions of objects in a uniform manner.*
@@ -166,6 +166,30 @@ Treating individual and aggregate objects uniformly.
 - A single object can masquerade as a collection with yield return this;
 
 
+### Decorator
+
+Adding behavior without altering the class itself.
+
+##### Motivation
+- Want to augment object with additional functionality
+- But without changing/rewriting the existing code (OCP)
+- And want to keep the new functionality separate (SRP)
+- Need to be able to interact with existing structures
+- Two options:
+  - Inherit from required object if possible, some objects are sealed
+  - Build a decorator which references the decorated objects and provides additional behavior
+
+
+*Faciliates the addition of behaviors to individual objects without inheriting from them*
+
+
+##### Summary
+
+- A decorator keeps the reference to the decorated objects
+- may or may not proxy over calls (or just part of calls)
+  - user Resharper to generate delegated members
+- exists in a static variation X<Y\<Foo>>
+  - very limited use, inability to inherit from type params
 
 
 
