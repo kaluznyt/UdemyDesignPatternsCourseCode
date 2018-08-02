@@ -128,6 +128,7 @@
     <Compile Include="DesignPatterns\Structural\Decorator\Square.cs" />
     <Compile Include="DesignPatterns\Structural\Decorator\TransparentShape.cs" />
     <Compile Include="DesignPatterns\Structural\Flyweight\BetterFormattedText.cs" />
+    <Compile Include="DesignPatterns\Structural\Flyweight\Exercise.cs" />
     <Compile Include="DesignPatterns\Structural\Flyweight\Flyweight.cs" />
     <Compile Include="DesignPatterns\Structural\Flyweight\FormattedText.cs" />
     <Compile Include="DesignPatterns\Structural\Flyweight\User.cs" />

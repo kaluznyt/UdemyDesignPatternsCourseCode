@@ -230,7 +230,9 @@ Space optimization!
 
 ##### Summary
 
-- template
+- If you have any data that is common minimize the storage space for that data.
+- Define the idea of ranges on homogeneous collections and store data related to those ranges.
+- .NET string interning is the Flyweight pattern
 
 
 
