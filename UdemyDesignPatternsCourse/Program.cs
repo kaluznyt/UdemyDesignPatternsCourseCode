@@ -7,6 +7,7 @@ using UdemyDesignPatternsCourse.DesignPatterns.Structural.Bridge;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Composite;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Decorator;
 using UdemyDesignPatternsCourse.DesignPatterns.Structural.Flyweight;
+using UdemyDesignPatternsCourse.DesignPatterns.Structural.Proxy;
 using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
 using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
 using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
@@ -44,7 +45,8 @@ namespace UdemyDesignPatternsCourse
             //new Bridge().Run();
             //new Composite().Run();
             //new Decorator().Run();
-            new Flyweight(new TestOutputHelper()).Run();
+            //new Flyweight(new TestOutputHelper()).Run();
+            new Proxy().Run();
         }
 
         static void Solid()

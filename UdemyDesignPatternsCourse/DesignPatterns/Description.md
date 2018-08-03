@@ -235,6 +235,37 @@ Space optimization!
 - .NET string interning is the Flyweight pattern
 
 
+### Proxy
+
+An interface for accessing a particular resource.
+
+##### Motivation
+- You are making a call foo.Bar()
+- This assumes that foo is in the same process as Bar()
+- What if later on, you want to put all foo-related operations into a separate process
+- proxy to the rescue:
+  - same interface, entirely different behavior
+  - communication proxy, logging, virtual, guarding...
+
+
+*A class that functions as an interface to a particular resource.
+That resource may be remote, expensive to construct, or may require logging or some other added functionality.*
+
+
+##### Proxy vs Decorator
+- Proxy provides an identical interface, decorator provides an enhanced interface
+- Decorator typicaly aggregates or has reference to what it is decorating, proxy doesnt need to
+- Proxy might not even be working with a materialized object
+
+
+##### Summary
+
+- Proxy has the same interface as an underlying object
+- To create a proxy simply replicate the existing interface of an object
+- Add relevant functionality to the redefined member functions
+- Different proxies (communication, logging, caching etc.) have completely different behaviors
+
+
 
 
 ### TEMPLATE
