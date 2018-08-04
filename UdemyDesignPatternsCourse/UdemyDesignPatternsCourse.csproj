@@ -151,6 +151,13 @@
     <Compile Include="DesignPatterns\Structural\Flyweight\FormattedText.cs" />
     <Compile Include="DesignPatterns\Structural\Flyweight\User.cs" />
     <Compile Include="DesignPatterns\Structural\Flyweight\User2.cs" />
+    <Compile Include="DesignPatterns\Structural\Interpreter\BinaryOperation.cs" />
+    <Compile Include="DesignPatterns\Structural\Interpreter\Exercise.cs" />
+    <Compile Include="DesignPatterns\Structural\Interpreter\IElement.cs" />
+    <Compile Include="DesignPatterns\Structural\Interpreter\IExpression.cs" />
+    <Compile Include="DesignPatterns\Structural\Interpreter\Integer.cs" />
+    <Compile Include="DesignPatterns\Structural\Interpreter\Interpreter.cs" />
+    <Compile Include="DesignPatterns\Structural\Interpreter\Token.cs" />
     <Compile Include="DesignPatterns\Structural\Proxy\BankAccount.cs" />
     <Compile Include="DesignPatterns\Structural\Proxy\Car.cs" />
     <Compile Include="DesignPatterns\Structural\Proxy\CarProxy.cs" />

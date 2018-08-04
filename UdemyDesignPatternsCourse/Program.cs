@@ -2,6 +2,7 @@
 {
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Singleton;
     using UdemyDesignPatternsCourse.DesignPatterns.Structural.Command;
+    using UdemyDesignPatternsCourse.DesignPatterns.Structural.Interpreter;
     using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
     using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
     using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
@@ -12,34 +13,35 @@
     {
         static void Main(string[] args)
         {
-            //Solid();
+            // Solid();
             DesignPatterns();
         }
 
         private static void DesignPatterns()
         {
-            //Creational();
+            // Creational();
             Structural();
         }
 
         private static void Creational()
         {
-            //new Builder().Run();
-            //new Factories().Run();
-            //new Prototype().Run();
-            new Singleton().Run();
+            // new Builder().Run();
+            // new Factories().Run();
+            // new Prototype().Run();
+            // new Singleton().Run();
         }
 
         private static void Structural()
         {
-            //new Adapter().Run();
-            //new Bridge().Run();
-            //new Composite().Run();
-            //new Decorator().Run();
-            //new Flyweight(new TestOutputHelper()).Run();
-            //new Proxy().Run();
-            //new ChainOfResponsibility().Run();
-            new Command().Run();
+            // new Adapter().Run();
+            // new Bridge().Run();
+            // new Composite().Run();
+            // new Decorator().Run();
+            // new Flyweight(new TestOutputHelper()).Run();
+            // new Proxy().Run();
+            // new ChainOfResponsibility().Run();
+            // new Command().Run();
+            new Interpreter().Run();
         }
 
         static void Solid()

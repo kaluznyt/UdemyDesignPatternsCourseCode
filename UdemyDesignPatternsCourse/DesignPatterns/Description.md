@@ -316,6 +316,37 @@ YOU SHALL NOT PASS!
 - Can create composite commands (aka macros)
 
 
+### Interpreter
+
+Interpreters are all around us. Even now, in this very room.
+
+##### Motivation
+- Textual input needs to be processed
+  - E.g. turned into OOP structures
+- Some examples:
+  - programming language compilers, interpreters and IDEs
+  - HTML, XML and similiar
+  - Numeric expressions (3+4/5)
+  - Regular expressions
+- Turning strings into OOP based structures in a complicated process
+
+*A component that processes structured text data. Does so by turning it into separate lexical tokens (lexing) and then interpreting sequences of said tokens (parsing).*
+
+##### Summary
+
+- Barring simple cases, an interpreted acts in two stages
+- Lexing turns input into a set of tokens e.g.
+  - 3*(4+5) -> Lit[3] Start Lparen Lit[4] Plus Lit[5] Rparen
+- Parsing tokens into meaningful constructs (abstract syntax tree):
+  - MultiplicationExpression [  
+&nbsp;&nbsp;&nbsp;Integer[3],  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AdditionExpression[  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integer[4],  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integer[5]  
+&nbsp;&nbsp;]   
+]
+- Traverse the data and calculate the result
+
 
 ### TEMPLATE
 
