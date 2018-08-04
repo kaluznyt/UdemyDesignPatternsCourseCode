@@ -112,12 +112,17 @@
     <Compile Include="DesignPatterns\Structural\Bridge\Bridge.cs" />
     <Compile Include="DesignPatterns\Structural\Bridge\Exercise.cs" />
     <Compile Include="DesignPatterns\Structural\ChainOfResponsibility\ChainOfResponsibility.cs" />
+    <Compile Include="DesignPatterns\Structural\Command\BankAccount.cs" />
+    <Compile Include="DesignPatterns\Structural\Command\BankAccountCommand.cs" />
+    <Compile Include="DesignPatterns\Structural\Command\Command.cs" />
     <Compile Include="DesignPatterns\Structural\ChainOfResponsibility\Creature.cs" />
     <Compile Include="DesignPatterns\Structural\ChainOfResponsibility\CreatureModifier.cs" />
     <Compile Include="DesignPatterns\Structural\ChainOfResponsibility\DoubleAttackModifier.cs" />
     <Compile Include="DesignPatterns\Structural\ChainOfResponsibility\Exercise.cs" />
     <Compile Include="DesignPatterns\Structural\ChainOfResponsibility\IncreasedDefenseModifier.cs" />
     <Compile Include="DesignPatterns\Structural\ChainOfResponsibility\NoBonusesModifier.cs" />
+    <Compile Include="DesignPatterns\Structural\Command\Exercise.cs" />
+    <Compile Include="DesignPatterns\Structural\Command\ICommand.cs" />
     <Compile Include="DesignPatterns\Structural\Composite\Circle.cs" />
     <Compile Include="DesignPatterns\Structural\Composite\Exercise.cs" />
     <Compile Include="DesignPatterns\Structural\Composite\Composite.cs" />

@@ -291,6 +291,29 @@ Sequence of handlers processing an event one after another.
 - Enlist objects in the chain, possibly controlling their order
 - Object removal from chain (e.g. in Dispose())
 
+### Command
+
+YOU SHALL NOT PASS!
+
+##### Motivation
+- Ordinary c# statements are perishable
+  - cannot undo a field/property assignment
+  - cannot directly sreialize a sequence of actions (calls)
+- want an object that represents an operation
+  - X should change its property Y to Z
+  - X should do W()
+- Uses: GUI commands, multi-level undo/redo, macro recording and more!
+
+
+*An object which represents an instruction to perform a particular action. Contains all the information necessary for the action to be taken.*
+
+
+##### Summary
+
+- Encapsulate all details of an operation in a separate object
+- Define instruction for applying the command (either in the command itself or elsewhere)
+- Optionally define instructions for undoing the command
+- Can create composite commands (aka macros)
 
 
 
