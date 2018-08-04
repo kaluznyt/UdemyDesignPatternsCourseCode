@@ -3,6 +3,7 @@
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Singleton;
     using UdemyDesignPatternsCourse.DesignPatterns.Structural.Command;
     using UdemyDesignPatternsCourse.DesignPatterns.Structural.Interpreter;
+    using UdemyDesignPatternsCourse.DesignPatterns.Structural.Iterator;
     using UdemyDesignPatternsCourse.SOLID.DependencyInversionPrinciple;
     using UdemyDesignPatternsCourse.SOLID.InterfaceSegregationPrinciple;
     using UdemyDesignPatternsCourse.SOLID.LiskovSubstitutionPrinciple;
@@ -41,7 +42,8 @@
             // new Proxy().Run();
             // new ChainOfResponsibility().Run();
             // new Command().Run();
-            new Interpreter().Run();
+            //new Interpreter().Run();
+            new Iterator().Run();
         }
 
         static void Solid()

@@ -348,6 +348,30 @@ Interpreters are all around us. Even now, in this very room.
 - Traverse the data and calculate the result
 
 
+### Iterator
+
+How traversal of data structures happens and who makes it happen.
+
+##### Motivation
+- Iteration is a core functinality of various data structures
+- An interator is a class that facilitates the traversal
+  - keeps a reference to the current element
+  - knows how to move to a different element
+- Iterator is an implicit construct
+  - .NET builds a state machine around your yield return statements
+
+
+*An object (or in .NET a method) that facilitates the traversal of a data structure*
+
+
+##### Summary
+
+- An iterator specifies how you can traverse an object
+- An iterator object unlike a method cannot be recursive
+- Generally, an IEnumerable\<T>-returning method is enough
+- Iteration works through duck typing - you need GetEnumerator() that yields a type that has Current and MoveNext()
+
+
 ### TEMPLATE
 
 description

@@ -158,6 +158,12 @@
     <Compile Include="DesignPatterns\Structural\Interpreter\Integer.cs" />
     <Compile Include="DesignPatterns\Structural\Interpreter\Interpreter.cs" />
     <Compile Include="DesignPatterns\Structural\Interpreter\Token.cs" />
+    <Compile Include="DesignPatterns\Structural\Iterator\BinaryTree.cs" />
+    <Compile Include="DesignPatterns\Structural\Iterator\Creature.cs" />
+    <Compile Include="DesignPatterns\Structural\Iterator\Exercise.cs" />
+    <Compile Include="DesignPatterns\Structural\Iterator\InOrderIterator.cs" />
+    <Compile Include="DesignPatterns\Structural\Iterator\Iterator.cs" />
+    <Compile Include="DesignPatterns\Structural\Iterator\Node.cs" />
     <Compile Include="DesignPatterns\Structural\Proxy\BankAccount.cs" />
     <Compile Include="DesignPatterns\Structural\Proxy\Car.cs" />
     <Compile Include="DesignPatterns\Structural\Proxy\CarProxy.cs" />
