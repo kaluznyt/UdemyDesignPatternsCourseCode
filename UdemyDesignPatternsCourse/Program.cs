@@ -17,6 +17,8 @@ using Xunit.Sdk;
 
 namespace UdemyDesignPatternsCourse
 {
+    using UdemyDesignPatternsCourse.DesignPatterns.Structural.ChainOfResponsibility;
+
     class Program
     {
         static void Main(string[] args)
@@ -46,7 +48,8 @@ namespace UdemyDesignPatternsCourse
             //new Composite().Run();
             //new Decorator().Run();
             //new Flyweight(new TestOutputHelper()).Run();
-            new Proxy().Run();
+            //new Proxy().Run();
+            new ChainOfResponsibility().Run();
         }
 
         static void Solid()

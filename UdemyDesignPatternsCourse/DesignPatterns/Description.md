@@ -266,6 +266,32 @@ That resource may be remote, expensive to construct, or may require logging or s
 - Different proxies (communication, logging, caching etc.) have completely different behaviors
 
 
+### Chain of Responsibility
+
+Sequence of handlers processing an event one after another.
+
+##### Motivation
+- Unethical behavior by an employee, who takes a blame ?:
+  - Employee, Manager or CEO (example of CoR)
+- You click a graphical element on a form
+  - Button handles it, stops processing
+  - Underlying group box
+  - Underlying window 
+- Computer game
+  - Create has attack and defense values
+  - Those can be boosted by other cards
+  
+
+*A chain of components who all get a chance to process a command or a query, optionally having default processing implementation and an ability to terminate the processing chain.*
+
+
+##### Summary
+
+- CoR can be implemented as a chain of references (like linkedlist) or a centralized construct (mediator-like)
+- Enlist objects in the chain, possibly controlling their order
+- Object removal from chain (e.g. in Dispose())
+
+
 
 
 ### TEMPLATE
