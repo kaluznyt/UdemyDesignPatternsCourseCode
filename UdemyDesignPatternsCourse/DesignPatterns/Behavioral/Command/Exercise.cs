@@ -1,9 +1,9 @@
-﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Structural.Command
+﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Command
 {
+    using System;
+
     namespace Coding.Exercise
     {
-        using System;
-
         public class Command
         {
             public enum Action
@@ -29,7 +29,7 @@
                 switch (c.TheAction)
                 {
                     case Command.Action.Deposit:
-                        c.Success = Deposit(c.Amount);
+                        c.Success = this.Deposit(c.Amount);
                         break;
                     case Command.Action.Withdraw:
                         c.Success = this.Withdraw(c.Amount);

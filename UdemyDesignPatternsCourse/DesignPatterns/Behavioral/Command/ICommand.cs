@@ -1,4 +1,4 @@
-﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Structural.Command
+﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Command
 {
     public interface ICommand
     {

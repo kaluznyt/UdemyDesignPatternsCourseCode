@@ -1,4 +1,4 @@
-﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Structural.Command
+﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Command
 {
     using System;
 
@@ -44,7 +44,7 @@
         {
             if (!this.succeeded) return;
 
-            switch (action)
+            switch (this.action)
             {
                 case Action.Deposit:
                     this.bankAccount.Withdraw(this.amount);

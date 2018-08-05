@@ -1,4 +1,4 @@
-﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Structural.ChainOfResponsibility
+﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Behavioral.ChainOfResponsibility
 {
     public class CreatureModifier
     {

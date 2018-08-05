@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UdemyDesignPatternsCourse.DesignPatterns.Structural.ChainOfResponsibility
+﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Behavioral.ChainOfResponsibility
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
     namespace Coding.Exercise
     {
         public abstract class Creature

@@ -1,4 +1,4 @@
-﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Structural.Interpreter
+﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Interpreter
 {
     public class Integer : IElement
     {

@@ -1,15 +1,13 @@
-﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Structural.ChainOfResponsibility
+﻿namespace UdemyDesignPatternsCourse.DesignPatterns.Behavioral.ChainOfResponsibility
 {
     using System;
 
-    using UdemyDesignPatternsCourse.DesignPatterns.Structural.ChainOfResponsibility.BrokerChain;
-    using UdemyDesignPatternsCourse.DesignPatterns.Structural.ChainOfResponsibility.Coding.Exercise;
+    using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.ChainOfResponsibility.BrokerChain;
+    using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.ChainOfResponsibility.Coding.Exercise;
 
     using Xunit;
 
-    using static System.Console;
-
-    using Game = UdemyDesignPatternsCourse.DesignPatterns.Structural.ChainOfResponsibility.BrokerChain.Game;
+    using Game = UdemyDesignPatternsCourse.DesignPatterns.Behavioral.ChainOfResponsibility.BrokerChain.Game;
 
     public class ChainOfResponsibility : IDemo
     {
@@ -34,22 +32,22 @@
         {
             var game = new Game();
             var goblin = new BrokerChain.Creature(game, "Goblin", 2, 2);
-            WriteLine(goblin);
+            Console.WriteLine(goblin);
 
             using (new BrokerChain.DoubleAttackModifier(game, goblin))
             using (new IncreaseDefenseModifier(game, goblin))
             {
-                WriteLine(goblin);
+                Console.WriteLine(goblin);
             }
 
-            WriteLine(goblin);
+            Console.WriteLine(goblin);
         }
 
         private static void MethodChainClassingImplementation()
         {
             var goblin = new Creature("goblin", 2, 3);
 
-            WriteLine(goblin);
+            Console.WriteLine(goblin);
 
             var root = new CreatureModifier(goblin);
 
@@ -58,7 +56,7 @@
 
             root.Handle();
 
-            WriteLine(goblin);
+            Console.WriteLine(goblin);
         }
     }
 
@@ -71,7 +69,7 @@
 
             public void PerformQuery(object sender, Query q)
             {
-                Queries?.Invoke(sender, q);
+                this.Queries?.Invoke(sender, q);
             }
         }
 

@@ -1,7 +1,6 @@
 ﻿# Design Patterns
 
-## Creational
-
+## Creational Patterns
 
 ### Builder 
 
@@ -100,7 +99,7 @@ A design pattern everyone loves to hate..but is it really that bad ?
 - Instead of directly using a singleton, consider depending on a abstraction (e.g. interface)
 - consider defining singleton lifetime in DI container
 
-## Structural
+## Structural Patterns
 
 ### Adapter
 
@@ -265,6 +264,7 @@ That resource may be remote, expensive to construct, or may require logging or s
 - Add relevant functionality to the redefined member functions
 - Different proxies (communication, logging, caching etc.) have completely different behaviors
 
+## Behavioral Patterns
 
 ### Chain of Responsibility
 
@@ -370,6 +370,77 @@ How traversal of data structures happens and who makes it happen.
 - An iterator object unlike a method cannot be recursive
 - Generally, an IEnumerable\<T>-returning method is enough
 - Iteration works through duck typing - you need GetEnumerator() that yields a type that has Current and MoveNext()
+
+
+### Mediator
+
+Facilitates communication between components.
+
+##### Motivation
+- Components may go in and out of a system at any time
+  - chat room participants
+  - players in an mmorpg
+- it makes no sense for them to have direct references to one another as these may go dead
+- solution: have them all refer to some central component that facilitates communication
+
+
+*A component that facilitates communication between other components without them necessarily being aware of each other or having direct (reference) access to each other.*
+
+
+##### Summary
+
+- Create the mediator and have each object in the system refer to it
+  - e.g. in a field / constructor injection (mediator is singleton usually)
+- Mediator engages in bidirectional communiation with its connected components
+- Mediator has functions the components can call
+- Components have functions the mediator can call
+- Event processing (eg Rx) libraries make communication easier to implement
+
+
+### Memento
+
+Keep a memento of an object's state to return to that state.
+
+##### Motivation
+- An object or system goes through changes
+  - e.g. a bank account gets deposits and withdrawals
+- There are different ways of navigating those changes
+- One way is to record every change (Command) and teach a command to undo itself by providing an undo implementation usually which is opposite to action
+- Another is to simply save a snapshots of the system
+
+
+*A token/handle representing the system state. Lets us roll back to the state when the token was generated. May or may not directly expose state information.*
+
+
+##### Summary
+
+- Mementos are used to roll back states arbitrarily
+- A memento is simply a token/handle class with typically no functions on its own
+- A memento is not required to expose directly the state(s) to which it reverts the system
+- Can be used to implement undo/redo
+
+
+
+### Null Object
+
+A behavioral design pattern with no behaviors. 
+
+##### Motivation
+- When component A uses component B, it typically assumes component B is not null
+  - you inject B, not B? or some Option\<B>
+  - you do not check for null (?.) on every call
+- There is no option of telling A not to use an instance of B
+  - its use is hard coded
+- Thus we build a no-op, non-functioning inheritor of B and pass it into A
+
+*A no-op object that conforms to the required interface, satysfying a dependency requirement of some other object.*
+
+##### Summary
+
+- template
+
+
+
 
 
 ### TEMPLATE
