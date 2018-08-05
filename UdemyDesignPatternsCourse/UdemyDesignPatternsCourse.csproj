@@ -237,7 +237,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Description.md" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
