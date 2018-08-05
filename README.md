@@ -437,8 +437,12 @@ A behavioral design pattern with no behaviors.
 
 ##### Summary
 
-- template
-
+- Implement the requried interface
+- Rewrite the methods with empty bodies
+  - If method is non-void return default(T)
+  - If these values are ever used, you are in trouble
+- Supply an instance of Null Object in place of actual object meant to be replaced/nullified
+- Dynamic construction possible (with performance implications)
 
 
 

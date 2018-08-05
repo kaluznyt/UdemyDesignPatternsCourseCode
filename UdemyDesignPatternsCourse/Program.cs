@@ -3,6 +3,7 @@
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.ChainOfResponsibility;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Command;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Interpreter;
+    using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.NullObject;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Builder;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Factories;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Prototype;
@@ -28,14 +29,15 @@
     {
         public static void Main(string[] args)
         {
-            Solid();
+            // Solid();
             DesignPatterns();
         }
 
         private static void DesignPatterns()
         {
-            Creational();
-            Structural();
+            // Creational();
+            // Structural();
+            Behavioral();
         }
 
         private static void Creational()
@@ -58,12 +60,13 @@
 
         private static void Behavioral()
         {
-            new ChainOfResponsibility().Run();
-            new Command().Run();
-            new Interpreter().Run();
-            new Iterator().Run();
-            new Mediator().Run();
-            new MementoDemo().Run();
+            // new ChainOfResponsibility().Run();
+            // new Command().Run();
+            // new Interpreter().Run();
+            // new Iterator().Run();
+            // new Mediator().Run();
+            // new MementoDemo().Run();
+            new NullObject().Run();
         }
 
         private static void Solid()

@@ -85,6 +85,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPatterns\Behavioral\NullObject\BankAccount.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\ConsoleLog.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\Exercise.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\ILog.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\NullLog.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Builder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\CodeBuilder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\FacetedBuilder\Person.cs" />
