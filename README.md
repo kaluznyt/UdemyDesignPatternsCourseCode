@@ -444,7 +444,26 @@ A behavioral design pattern with no behaviors.
 - Supply an instance of Null Object in place of actual object meant to be replaced/nullified
 - Dynamic construction possible (with performance implications)
 
+### Observer
 
+Built-in right into C#/.NET, right ?
+
+##### Motivation
+- We need to be informed when certain things happen:
+  - objects property changes
+  - object does something
+  - some external event occurs
+- we want to listen to events and notified when they occur
+- Built into C# with the event keyword
+  - But then what is this IObservable\<T>/IObserver\<T> for ?
+  - What about INotifyPropertyChanging/Changed
+  - And what are the BindingList\<T>/ObservableCollection\<T>
+
+*Observer is an object that wishes to be informed about events happening in the system. The entity generating the events is observable.*
+
+##### Summary
+
+- template
 
 
 ### TEMPLATE

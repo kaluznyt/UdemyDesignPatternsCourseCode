@@ -4,6 +4,7 @@
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Command;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Interpreter;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.NullObject;
+    using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Observer;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Builder;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Factories;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Prototype;
@@ -66,7 +67,8 @@
             // new Iterator().Run();
             // new Mediator().Run();
             // new MementoDemo().Run();
-            new NullObject().Run();
+            // new NullObject().Run();
+            new Observer().Run();
         }
 
         private static void Solid()

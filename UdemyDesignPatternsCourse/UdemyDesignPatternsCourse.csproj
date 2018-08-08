@@ -90,6 +90,12 @@
     <Compile Include="DesignPatterns\Behavioral\NullObject\Exercise.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\ILog.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\NullLog.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Button.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Exercise.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Market.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Observer.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Person.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Window.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Builder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\CodeBuilder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\FacetedBuilder\Person.cs" />
@@ -203,6 +209,7 @@
     <Compile Include="DesignPatterns\Structural\Proxy\Property.cs" />
     <Compile Include="DesignPatterns\Structural\Proxy\Proxy.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IDemo.cs" />
     <Compile Include="SOLID\4.InterfaceSegregationPrinciple\Document.cs" />
