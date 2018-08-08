@@ -54,6 +54,9 @@
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Stateless, Version=2.3.1.1, Culture=neutral, PublicKeyToken=93038f0927583c9a, processorArchitecture=MSIL">
+      <HintPath>..\packages\stateless-4.0.2.3.1.1\lib\net40\Stateless.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
@@ -96,6 +99,10 @@
     <Compile Include="DesignPatterns\Behavioral\Observer\Observer.cs" />
     <Compile Include="DesignPatterns\Behavioral\Observer\Person.cs" />
     <Compile Include="DesignPatterns\Behavioral\Observer\Window.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\Exercise.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\State.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\States.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\Trigger.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Builder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\CodeBuilder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\FacetedBuilder\Person.cs" />
