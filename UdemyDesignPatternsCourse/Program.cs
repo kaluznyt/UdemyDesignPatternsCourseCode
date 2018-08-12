@@ -7,6 +7,7 @@
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Observer;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.State;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Strategy;
+    using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Template_Method;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Builder;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Factories;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Prototype;
@@ -71,8 +72,9 @@
             // new MementoDemo().Run();
             // new NullObject().Run();
             // new Observer().Run();
-            //new State().Run();
-            new Strategy().Run();
+            // new State().Run();
+            // new Strategy().Run();
+            new TemplateMethod().Run();
         }
 
         private static void Solid()

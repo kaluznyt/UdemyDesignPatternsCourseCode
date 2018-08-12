@@ -112,6 +112,10 @@
     <Compile Include="DesignPatterns\Behavioral\Strategy\Strategy.cs" />
     <Compile Include="DesignPatterns\Behavioral\Strategy\TextProcessor.cs" />
     <Compile Include="DesignPatterns\Behavioral\Strategy\TextProcessorStatic.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Template Method\Chess.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Template Method\Exercise.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Template Method\Game.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Template Method\TemplateMethod.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Builder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\CodeBuilder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\FacetedBuilder\Person.cs" />

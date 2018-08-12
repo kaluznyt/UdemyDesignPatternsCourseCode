@@ -519,6 +519,31 @@ System behavior partially specified at a runtime.
 - Provide for either dynamic or static composition of strategy in the overall algorithm
 
 
+### Template Method
+
+A high-level blueprint for an algorithm to be completed/implemented by inheritors
+
+##### Motivation
+- Algorithms can be decomposed into common/general parts + specific parts
+- Strategy pattern does this through composition
+  - high-level algorithm uses an interface
+  - concrete implementations implement that interface
+- template method does the same thing through inheritance
+  - overall algorithms makes use of abstract member
+  - inheritors override abstract members
+  - parent template method is invoked and subsequently invokes the concrete implementations from inherited classes
+
+
+*Allows us to define the 'skeleton' of the algorithm, with concrete implementations defined in subclasses.*
+
+
+##### Summary
+
+- Define an algorithms at a high level
+- Define constituent parts as abstract/method properties
+- Inherit the algorithms class, providing necessary overrides
+
+
 ### TEMPLATE
 
 description
