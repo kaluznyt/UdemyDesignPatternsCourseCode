@@ -59,6 +59,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Reactive.4.0.0\lib\net46\System.Reactive.dll</HintPath>
     </Reference>
@@ -103,6 +104,14 @@
     <Compile Include="DesignPatterns\Behavioral\State\State.cs" />
     <Compile Include="DesignPatterns\Behavioral\State\States.cs" />
     <Compile Include="DesignPatterns\Behavioral\State\Trigger.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\Exercise.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\HtmlListStrategy.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\IListStrategy.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\MarkdownListStrategy.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\OutputFormat.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\Strategy.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\TextProcessor.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Strategy\TextProcessorStatic.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Builder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\CodeBuilder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\FacetedBuilder\Person.cs" />
