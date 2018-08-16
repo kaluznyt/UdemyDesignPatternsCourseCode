@@ -8,6 +8,7 @@
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.State;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Strategy;
     using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Template_Method;
+    using UdemyDesignPatternsCourse.DesignPatterns.Behavioral.Visitor;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Builder;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Factories;
     using UdemyDesignPatternsCourse.DesignPatterns.Creational.Prototype;
@@ -74,7 +75,8 @@
             // new Observer().Run();
             // new State().Run();
             // new Strategy().Run();
-            new TemplateMethod().Run();
+            // new TemplateMethod().Run();
+            new Visitor().Run();
         }
 
         private static void Solid()

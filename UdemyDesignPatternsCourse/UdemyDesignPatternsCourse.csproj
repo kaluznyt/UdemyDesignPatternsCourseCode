@@ -116,6 +116,14 @@
     <Compile Include="DesignPatterns\Behavioral\Template Method\Exercise.cs" />
     <Compile Include="DesignPatterns\Behavioral\Template Method\Game.cs" />
     <Compile Include="DesignPatterns\Behavioral\Template Method\TemplateMethod.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\AdditionExpression.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\DoubleExpression.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\Exercise.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\Expression.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\ExpressionCalculator.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\ExpressionPrinter.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\IExpressionVisitor.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\Visitor.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Builder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\CodeBuilder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\FacetedBuilder\Person.cs" />

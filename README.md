@@ -544,17 +544,145 @@ A high-level blueprint for an algorithm to be completed/implemented by inheritor
 - Inherit the algorithms class, providing necessary overrides
 
 
-### TEMPLATE
+### Visitor
 
-description
+Typically a tool for structure traversal rather than anything else.
 
 ##### Motivation
-- some objects are simple and can be created in a single constructor call
+- Need to define a new operation on an entire class hierarchy
+  - e.g. make a document model printable to HTML/Markdown
+- Dont want to keep modyfying every class in the hierarchy
+- Need access to the non-common aspects of classes in the hierarchy
+  - i.e an extension method wont do
+- create an external component to handle rendering
+  - but avoid type checks
 
 
-*template*
+*A pattern where a component (visitor) is allowed to traverse the entire inheritance hierarchy. Implemented by propagating a single visit() method throughout the entire hierarchy*
+
+Visit() method exists in order to allow something called double dispatch
+
+Dispatch: 
+  - Which function to call
+  - single dispatch: depends on name of request and type of receiver
+  - double dispatch: depends on name of request and type of two receivers (type of visitor, type of element being visited)
 
 
 ##### Summary
 
-- template
+- Double dispatch:
+  - Propagate an 'accept(Visitor v)' method through the entire hierarchy
+  - Create a visitor with visit(foo), visit(bar) etc ..for each element/class in the hierarchy
+  - each accept simply calls visitor.visit(this)
+- Dynamic dispatch:
+  - Using dynamic, we can invoke right overload based on argument type alone (performance penalty)
+
+
+## Course summmary
+
+### Creational 
+
+###### Builder
+  - separate component for when object construction gets too complicated, too many arguments in constructor, optional arguments, or too much logic in constructor
+  - can create mutually cooperating sub-builders
+  - often has a fluent interface
+
+###### Factories
+  - similiar to a constructor
+  - factory method is more expressive than constructor (can have name, overloads)
+  - factory can be an outside class or inner class inner class has the benefit of accessing private members
+
+###### Prototype
+  - creation of object from an existing object
+  - requires either explicit deep copy or copy through serialization like to json and then from json
+
+###### Signelto
+  - when you need to ensure just a single instance exists
+  - make thread-safe and lazy with Lazy\<T>
+  - hard coding singleton into code is very difficult to get rid of, test etc therfore
+  - consider extracting interface and using dependency injection instead (lifetime setting of IoC container)
+
+
+### Structural
+
+###### Adapter
+  - converts the interface you get to the interface you need
+  
+###### Bridge
+  - decouple abstraction from implementation
+  - avoids class explosion by extracting the part of a hierarchy into a separate interface and refer to a field
+
+###### Composite
+  - allows clients to treat individial objects and compositions of objects uniformly
+  - can be easily implemented in .NET by using ienumerable interface and yield
+
+###### Decorator
+  - attach additional resposibilities to objects
+  - in case inheritance isn't available like for example system/external library, sealed classes like StringBuilder (resharper creating delegating members)
+
+###### Facade
+  - single unified interface over a set of classes/systems
+ 
+###### Flyweight
+  - efficiently support very large numbers of similiar objects (spare optimalization techique)
+  - string in .net is flyweight example
+
+###### Proxy
+  - provide a surrogate objects that forward calls to the real object while performing additional functions
+  - remote proxies - object doesn't live in the same process/machine like wcf client proxy
+  - protection proxies - check access rights to call method
+  - dynamic proxy creates a proxy dynamically, without the necessity of replicating the target object API
+
+
+
+### Behavioral
+
+###### Chain of Responsibility
+  - allow components to process information/events in a chain
+  - each element in the chain refers to next element or
+  - make list and go throug it
+
+###### Command
+  - encapsulate a request into a separate object
+  - good for audit, replay, undo/redo
+  - part of CQS/CQRS (Query is also, effectively, a command)
+  
+###### Interpreter
+  - a large topic by itself ! 
+  - transform textual input into object-oriented structures
+  - used by interpreters, compilers, static analysis tools etc.
+  - Compiler Theory is a separate branch of Computer Science
+  - ANTRL - popular tool 
+
+###### Iterator
+  - provides an interface for accessing elements of an aggregate object
+  - IEnumerable\<T> should be used in 99% cases
+
+###### Mediator
+  - provides mediation services between multiple objects
+  - objects are not aware of each other, just of the mediator object (can be implemented as a injectable singleton)
+  - e.g. message passing, chat room
+
+###### Memento
+  - yields token representing system states
+  - Tokens do not allow direct manipulation, but can be used in appropriate APIs
+  - undo/redo
+
+###### Observer
+  - built into C# with the event keyword
+  - additional support provided for properties, collections and observable streams
+  - observable streams through Rx (Reactive Extensions)
+
+###### State
+  - model systems by having one of possible states and transition between those states
+  - such system is called a state machine
+  - special frameworks exists to orchestrate state machines e.g. Stateless 
+
+###### Strategy and template method
+  - both define an algorithm blueprint/placeholder and allow to customize it in a particular way
+  - strategy uses composition, Template Method uses inheritance
+
+###### Visitor
+  - adding functionality to existing classes through double dispatch
+  - use it to traverse hierarchy
+  - dynamic visitor possible, but with performance cost
